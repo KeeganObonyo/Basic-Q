@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./models"
+	"basicq/models"
 	"encoding/json"
 	"fmt"
 	"io"

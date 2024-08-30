@@ -1,18 +1,19 @@
 package main
 
 import (
-	"net/http"
-	"time"
-	"encoding/json"
-	"github.com/gorilla/mux"
-	"github.com/gorilla/handlers"
+    "encoding/json"
+    "fmt"
+    "net/http"
+    "time"
 
+    "github.com/gorilla/handlers"
+    "github.com/gorilla/mux"
 )
 
 var path_details []string
 
 func main() {
-	p("Basic QUANT APP", version(), "started at Adress:", config.Address, "\n", time.Now())
+	fmt.Println("Basic QUANT APP", version(), "started at Adress:", config.Address, "\n", time.Now())
 
     router := mux.NewRouter()
 
